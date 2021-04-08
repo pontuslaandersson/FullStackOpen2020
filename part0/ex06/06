@@ -1,0 +1,7 @@
+note over browser:
+On "submit", JavaScript event handler creates a new note, re-renders the list,
+and sends the new note to the server.
+end note
+browser->server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+server-->browser: 201 "note created"
